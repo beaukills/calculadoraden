@@ -6,7 +6,7 @@ int main(){
   	int i, n, A = 0;
 
     do{
-   printf("Calculadora de N\n\n");
+    printf("Calculadora de N\n\n");
     printf("inserir um valor de inteiros: ");
     scanf("%d", &n);
     
