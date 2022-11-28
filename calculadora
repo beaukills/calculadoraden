@@ -4,7 +4,7 @@
 int main(){
 	
 	/* Trabalho de Implementação
-	Programação e Algoritmos - UFPEL
+	Algoritmos e Programação - UFPEL
 	Vitor Medina, Rafael Silva */
 
 	int resp;
