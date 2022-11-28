@@ -3,10 +3,14 @@
 
 int main(){
 	
+	/* Trabalho de Implementação
+	Programação e Algoritmos - UFPEL
+	Vitor Medina, Rafael Silva */
+
 	int resp;
    
     do{
-    int no, no2, n, N, i, s = 0, SAIR;
+    int no, no2, n, i, soma = 0, N, SAIR;
     int resultado;
     char op;
 
@@ -55,12 +59,12 @@ int main(){
         printf("Resultado: %d", resultado);
         break;
     case  '5':
-        printf("inserir valor: ");
-        scanf("%d", &no);
-    for (i = 1; i <= no; ++i) {
-        s += i;
+    printf("Inserir valor: ");
+    scanf("%d", &no);
+        for (i = 1; i <= no; ++i) {
+        soma += i;
     }
-    printf("resultado = %d", s, resultado);
+    printf("soma = %d", soma);
         break;
     case  '6':
     	exit(1);
