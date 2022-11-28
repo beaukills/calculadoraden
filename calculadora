@@ -2,17 +2,77 @@
 #include <stdlib.h>
 
 int main(){
-
-  	int i, n, A = 0;
-
+	
+	int resp;
+   
     do{
-    printf("Calculadora de N\n\n");
-    printf("inserir um valor de inteiros: ");
-    scanf("%d", &n);
-    
-    } while (n < 1);
-    for(i = 1; i <= n; i++)
-    A = A + i;
-    
-    printf("Resultado %d: %d\n\n", n, A);
+    int no, no2, n, N, i, s = 0, SAIR;
+    int resultado;
+    char op;
+
+    printf("CALCULADORA\n\n");
+    printf("ESCOLHER OPERACAO: (+, -, *, /, N)\n");
+    printf("(1) ADICAO\n");
+    printf("(2) SUBTRACAO\n");
+    printf("(3) MULTIPLICACAO\n");
+    printf("(4) DIVISAO\n");
+    printf("(5) N\n");
+    printf("(6) SAIR\n\n");
+    scanf(" %c", &op);
+
+    switch (op)
+    {
+    case '1':
+    printf("inserir valor: ");
+    scanf("%d", &no);
+    printf("inserir valor: ");
+    scanf("%d", &no2);
+        resultado = no + no2;
+        printf("Resultado: %d", resultado);
+        break;
+    case '2':
+    printf("inserir valor: ");
+    scanf("%d", &no);
+    printf("inserir valor: ");
+    scanf("%d", &no2);
+        resultado = no - no2;
+        printf("Resultado: %d", resultado);
+        break;
+    case '3':
+    printf("inserir valor: ");
+    scanf("%d", &no);
+    printf("inserir valor: ");
+    scanf("%d", &no2);
+        resultado = no * no2;
+        printf("%d", resultado);
+        break;
+    case '4':
+    printf("inserir valor: ");
+    scanf("%d", &no);
+    printf("inserir valor: ");
+    scanf("%d", &no2);
+        resultado = no / no2;
+        printf("Resultado: %d", resultado);
+        break;
+    case  '5':
+        printf("inserir valor: ");
+        scanf("%d", &no);
+    for (i = 1; i <= no; ++i) {
+        s += i;
+    }
+    printf("resultado = %d", s, resultado);
+        break;
+    case  '6':
+    	exit(1);
+        break;
+    default:
+        printf("Erro!");
+        break;
+  }
+  printf("\nContinuar? Sim(1) Nao(2)\n");
+  scanf("%d",&resp);
+  
+  }while (resp==1);
+  
+  return 0;
 }
